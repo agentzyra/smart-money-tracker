@@ -2,6 +2,8 @@
 
 > Nansen AI Campaign Submission — Built a Smart Money Tracker using Nansen CLI
 
+🌐 **Live Website:** [https://agentzyra.github.io/smart-money-tracker](https://agentzyra.github.io/smart-money-tracker)
+
 ## 🎯 Campaign Requirements
 
 ✅ **Install CLI** — Nansen CLI installed and configured  
@@ -21,9 +23,11 @@ This project leverages Nansen's powerful on-chain analytics to build a **Smart M
 ## 🛠️ Tech Stack
 
 - **Nansen CLI** — On-chain data and analytics
+- **Next.js + TypeScript** — Frontend website
+- **Tailwind CSS** — Styling
 - **Node.js** — Backend scripting
 - **Python** — Data analysis
-- **GitHub** — Version control
+- **GitHub Pages** — Hosting
 
 ## 📈 API Calls Made
 
@@ -60,21 +64,46 @@ This project leverages Nansen's powerful on-chain analytics to build a **Smart M
 ## 🚀 Usage
 
 ```bash
-# Install dependencies
+# Run CLI analysis
+cd scripts
+bash api-calls.sh
+node analyze.js
+
+# Run frontend
+cd frontend
 npm install
+npm run dev        # Development
+npm run build      # Build for production
+```
 
-# Run analysis
-node scripts/analyze.js
+## 🌐 Deploy to GitHub Pages
 
-# Generate report
-python scripts/report.py
+```bash
+cd frontend
+npm run build
+# Push dist folder to gh-pages branch
+git subtree push --prefix frontend/dist origin gh-pages
 ```
 
 ## 📁 Project Structure
 
 ```
-nansen-campaign-project/
+smart-money-tracker/
 ├── README.md
+├── frontend/                 # Next.js + TypeScript Website
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── page.tsx      # Main dashboard
+│   │   │   ├── layout.tsx    # Root layout
+│   │   │   └── globals.css   # Global styles
+│   │   └── components/
+│   │       ├── Dashboard.tsx # Dashboard component
+│   │       ├── TokenCard.tsx # Token card UI
+│   │       └── SmartMoneyTable.tsx # Smart money table
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── next.config.js
+│   └── tailwind.config.js
 ├── scripts/
 │   ├── api-calls.sh          # 10 API calls for campaign
 │   ├── analyze.js            # Analysis engine
