@@ -1,0 +1,13 @@
+{
+  "name": "nansen-campaign-project",
+  "version": "1.0.0",
+  "description": "Nansen AI Campaign - Multi-chain Crypto Analytics",
+  "main": "scripts/analyze.js",
+  "scripts": {
+    "analyze": "node scripts/analyze.js",
+    "api-calls": "bash scripts/api-calls.sh"
+  },
+  "keywords": ["nansen", "crypto", "analytics", "web3"],
+  "author": "Zyra Agent",
+  "license": "MIT"
+}
