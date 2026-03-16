@@ -1,21 +1,22 @@
-# Nansen Campaign Project
+# Smart Money Tracker
 
-> Nansen AI Campaign Submission — Multi-Chain Crypto Analytics Dashboard
+> Nansen AI Campaign Submission — Built a Smart Money Tracker using Nansen CLI
 
 ## 🎯 Campaign Requirements
 
 ✅ **Install CLI** — Nansen CLI installed and configured  
 ✅ **10+ API Calls** — Completed 10 successful API calls  
-🚀 **Build Something Creative** — Multi-chain analytics dashboard with arbitrage detection
+🚀 **Build Something Creative** — Smart Money Tracker with multi-chain analytics
 
 ## 📊 Project Overview
 
-This project leverages Nansen's powerful on-chain analytics to build a **Multi-Chain Crypto Analytics Dashboard** that:
+This project leverages Nansen's powerful on-chain analytics to build a **Smart Money Tracker** that:
 
-- Tracks token performance across multiple chains (Solana, Ethereum, Base, Arbitrum)
+- Tracks smart money movements and whale wallet activities
+- Monitors token performance across multiple chains (Solana, Ethereum, Base, Arbitrum)
 - Detects arbitrage opportunities by comparing prices across chains
-- Monitors smart money flows and netflow trends
-- Provides actionable insights for traders
+- Analyzes netflow trends for accumulation/distribution signals
+- Provides actionable insights for traders following smart money
 
 ## 🛠️ Tech Stack
 
